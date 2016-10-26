@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="row">
+			<form action="" method="POST" class="form" role="form">
+				<div class="form-group">
+					<label for="Nome">Nome</label>
+					<input type="text" [(ngModel)]="customerobj.CustomerNome" [ngModelOptions]="{standalone: true}" class="form-control" id="Nome" placeholder="Nome">
+				</div>
+				<div class="form-group">
+					<label for="Cognome">Cognome</label>
+					<input type="text" [(ngModel)]="customerobj.CustomerCognome" [ngModelOptions]="{standalone: true}"  class="form-control" id="Cognome" placeholder="Cognome">
+				</div>
+				<div class="form-group">
+					<label for="Indirizzo">Indirizzo</label>
+					<input type="text" [(ngModel)]="customerobj.CustomerIndirizzo" [ngModelOptions]="{standalone: true}"  class="form-control" id="Indirizzo" placeholder="Indirizzo">
+				</div>
+				<div class="form-group">
+					<label for="Cognome">Cap</label>
+					<input type="number" [(ngModel)]="customerobj.CustomerCap"  [ngModelOptions]="{standalone: true}" class="form-control" id="Cap" placeholder="Cap">
+				</div>
+				<div class="form-group">
+					<label for="Cognome">Data</label>
+					<input type="date" [(ngModel)]="customerobj.CustomerData"  [ngModelOptions]="{standalone: true}" class="form-control" id="Data" placeholder="Data">
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+{{customerobj.CustomerNome}}
+<br/> {{customerobj.CustomerCognome}}
+<br/> {{customerobj.CustomerIndirizzo}}
+<br/> {{customerobj.CustomerCap}}
+<br/> {{customerobj.CustomerData}}
+<br/>
